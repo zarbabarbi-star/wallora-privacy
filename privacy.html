@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Wallora Control Center</title>
+    <style>
+        :root {
+            --primary: #5865E8;
+            --text-dark: #182238;
+            --text-muted: #596579;
+            --bg-light: #F8F9FD;
+            --card-bg: #FFFFFF;
+            --border-color: #E2E8F0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 32px 24px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        }
+        h1 {
+            font-size: 28px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-size: 18px;
+            color: var(--text-dark);
+            margin-top: 28px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 6px;
+        }
+        p, li {
+            font-size: 15px;
+            color: var(--text-muted);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+        .meta-box {
+            background-color: var(--bg-light);
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 24px;
+            border: 1px solid var(--border-color);
+        }
+        .meta-box p {
+            margin: 4px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="subtitle">Wallora Control Center • Effective Date: October 22, 2026</div>
+
+        <p>This Privacy Policy describes the data practices of <strong>Wallora Control Center</strong> ("Wallora", "we", "us", or "our"), developed by <strong>hamza arbi</strong>, for the Android application (<code>com.framifygrowth.wallora</code>).</p>
+
+        <h2>1. Application Purpose</h2>
+        <p>Wallora is an Android customization application providing swipe-gesture control panel overlays, live wallpaper customization, theme presets, and desktop widgets.</p>
+
+        <h2>2. Accessibility Service Scope</h2>
+        <p>Wallora includes an Accessibility Service (<code>WalloraAccessibilityService</code>) used solely to perform the following function:</p>
+        <ul>
+            <li>To display an upper-right swipe trigger area and render the Wallora Control Center panel overlay above other applications and the home screen.</li>
+        </ul>
+        <p><strong>Accessibility Scope & Non-Collection:</strong></p>
+        <ul>
+            <li><code>WalloraAccessibilityService</code> does <strong>NOT</strong> read, inspect, or store your screen contents, typed text, passwords, personal messages, or notification text.</li>
+            <li>No accessibility event data is stored, logged, or transmitted off your device.</li>
+            <li>Accessibility service access is completely optional and can be turned off at any time in Android Settings &gt; Accessibility.</li>
+        </ul>
+
+        <h2>3. Media Session Access for Music Controls</h2>
+        <p>When the optional Notification Access (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>) permission is granted by the user, Wallora accesses Android's <code>MediaSessionManager</code> to discover active media sessions for the control panel music card. This allows displaying the active song title, artist name, play/pause status, and album art, and invoking playback transport controls (play, pause, next, previous). This media session information is processed purely in local device memory and is never logged, saved, or transmitted to any server.</p>
+
+        <h2>4. On-Device System Permissions</h2>
+        <p>Wallora requests the following optional permissions strictly to perform user-requested features. These permissions do not block the rest of Wallora if denied:</p>
+        <ul>
+            <li><strong>Display Over Other Apps (<code>SYSTEM_ALERT_WINDOW</code>):</strong> Allows displaying the control panel overlay over other apps.</li>
+            <li><strong>Write System Settings (<code>WRITE_SETTINGS</code>):</strong> Allows adjusting display brightness via the control panel brightness slider or toggling auto-brightness.</li>
+            <li><strong>Bluetooth (<code>BLUETOOTH_CONNECT</code>):</strong> Displays Bluetooth connection status and opens Bluetooth settings.</li>
+            <li><strong>Wi-Fi State (<code>ACCESS_WIFI_STATE</code>):</strong> Displays Wi-Fi status and opens Wi-Fi settings.</li>
+            <li><strong>App Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Delivers optional app notifications on Android 13+.</li>
+            <li><strong>Notification Access (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>):</strong> Discovers active media sessions for local music playback controls.</li>
+            <li><strong>Do Not Disturb Access (<code>ACCESS_NOTIFICATION_POLICY</code>):</strong> Toggles Do Not Disturb mode and Wallora's Zen rule from the control panel.</li>
+        </ul>
+
+        <h2>5. Local App Discovery for Shortcuts</h2>
+        <p>To support customizing launcher app shortcuts in the Themes section, Wallora queries installed applications locally on your device. <strong>No list of installed applications is transmitted or uploaded to any external server.</strong></p>
+
+        <h2>6. Asset Downloads & Network Requests</h2>
+        <p>Wallora fetches public theme catalogs, wallpaper previews, and video assets from public Supabase CDN storage endpoints over HTTPS. When making network requests to download assets, standard network request information (such as your IP address, requested file URL, and timestamp) is received by Supabase infrastructure to deliver the requested files.</p>
+
+        <h2>7. Analytics & Diagnostics</h2>
+        <p>Wallora integrates Google Firebase SDKs to maintain performance and fix crashes:</p>
+        <ul>
+            <li><strong>Firebase Analytics:</strong> Firebase Analytics collects app usage events, such as screen views and feature interactions, together with app-instance identifiers. This information is used to produce usage reports and improve Wallora. Advertising ID collection is explicitly disabled in Wallora's configuration and manifest.</li>
+            <li><strong>Firebase Crashlytics:</strong> Receives stack traces, device model information, Android OS version, and diagnostic crash identifiers when an unexpected error occurs.</li>
+        </ul>
+        <p>For details on Google Firebase data processing, visit the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Guidelines</a>.</p>
+
+        <h2>8. Feedback & Support Submissions</h2>
+        <p>When you use the in-app Feedback feature, feedback is prepared using Android's system share sheet and sent using an email or messaging app selected by you. The shared message includes your selected problem category, feedback text, device hardware/OS details, and any screenshot you choose to attach. No feedback is sent automatically without your explicit action.</p>
+
+        <h2>9. Data Retention, Storage & Deletion</h2>
+        <ul>
+            <li><strong>Local Application Data:</strong> Clearing app data or uninstalling Wallora removes app-private data from that installation. It does not automatically delete provider-held records, Android backups, or files you have separately saved or shared.</li>
+            <li><strong>Android Cloud Backups:</strong> If you have enabled Android system cloud backups, local app preferences may be backed up by Android OS according to your system Google Account settings.</li>
+            <li><strong>Google Analytics Data Retention:</strong> In Google Analytics, event-level data is retained for 2 months, and user-level data (associated with app-instance identifiers) is retained for 14 months. Reset on new user activity is enabled, meaning new activity from a user resets the retention clock for their user-level identifier. These retention settings apply to user-level and event-level data and do not affect standard aggregated summary reports.</li>
+            <li><strong>Firebase Crashlytics Data Retention:</strong> Firebase Crashlytics retains crash stack traces and associated diagnostic identifiers for 90 days before beginning the process of removing them from live and backup systems.</li>
+            <li><strong>Privacy & Deletion Requests:</strong> For privacy or deletion requests, contact <a href="mailto:hamzaarbi133@gmail.com">hamzaarbi133@gmail.com</a>. We assess requests and, where reasonably possible, delete information we control or use the relevant provider’s deletion tools. We may need information sufficient to locate the records. Your email address alone may not identify your analytics or diagnostic records.</li>
+            <li><strong>Support Correspondence:</strong> Support correspondence and feedback emails received at <code>hamzaarbi133@gmail.com</code> are deleted within 90 days after the issue is resolved, unless longer retention is required for legal obligations or an ongoing dispute.</li>
+        </ul>
+
+        <h2>10. Target Audience & Children's Privacy</h2>
+        <p>Wallora is intended for users aged 13 and older and is not specifically directed at children under the age of 13.</p>
+
+        <h2>11. Data Recipients & Advertising Status</h2>
+        <p>Current data recipients include Google Firebase (for analytics/crash diagnostics) and Supabase CDN (for asset delivery). <strong>The current release of Wallora contains no advertisements, advertising SDKs, or third-party ad brokers.</strong></p>
+
+        <div class="meta-box">
+            <p><strong>Developer Name:</strong> hamza arbi</p>
+            <p><strong>Privacy Contact Email:</strong> hamzaarbi133@gmail.com</p>
+            <p><strong>Application Package:</strong> com.framifygrowth.wallora</p>
+        </div>
+    </div>
+</body>
+</html>
