@@ -79,7 +79,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <div class="subtitle">Wallora Control Center • Effective Date: October 22, 2026</div>
+        <div class="subtitle">Wallora Control Center • Effective Date: October 23, 2026</div>
 
         <p>This Privacy Policy describes the data practices of <strong>Wallora Control Center</strong> ("Wallora", "we", "us", or "our"), developed by <strong>hamza arbi</strong>, for the Android application (<code>com.framifygrowth.wallora</code>).</p>
 
@@ -87,13 +87,14 @@
         <p>Wallora is an Android customization application providing swipe-gesture control panel overlays, live wallpaper customization, theme presets, and desktop widgets.</p>
 
         <h2>2. Accessibility Service Scope</h2>
-        <p>Wallora includes an Accessibility Service (<code>WalloraAccessibilityService</code>) used solely to perform the following function:</p>
+        <p>Wallora includes an Accessibility Service (<code>WalloraAccessibilityService</code>) used solely to perform the following functions:</p>
         <ul>
-            <li>To display an upper-right swipe trigger area and render the Wallora Control Center panel overlay above other applications and the home screen.</li>
+            <li>To open the Control Center panel overlay from the screen edge and show it on top of other applications and the home screen.</li>
+            <li>When you tap Screenshot in the Control Center panel, to take a screenshot on your behalf using system accessibility actions.</li>
         </ul>
         <p><strong>Accessibility Scope & Non-Collection:</strong></p>
         <ul>
-            <li><code>WalloraAccessibilityService</code> does <strong>NOT</strong> read, inspect, or store your screen contents, typed text, passwords, personal messages, or notification text.</li>
+            <li><code>WalloraAccessibilityService</code> does <strong>NOT</strong> read, inspect, or store your screen content or what you type.</li>
             <li>No accessibility event data is stored, logged, or transmitted off your device.</li>
             <li>Accessibility service access is completely optional and can be turned off at any time in Android Settings &gt; Accessibility.</li>
         </ul>
@@ -108,9 +109,8 @@
             <li><strong>Write System Settings (<code>WRITE_SETTINGS</code>):</strong> Allows adjusting display brightness via the control panel brightness slider or toggling auto-brightness.</li>
             <li><strong>Bluetooth (<code>BLUETOOTH_CONNECT</code>):</strong> Displays Bluetooth connection status and opens Bluetooth settings.</li>
             <li><strong>Wi-Fi State (<code>ACCESS_WIFI_STATE</code>):</strong> Displays Wi-Fi status and opens Wi-Fi settings.</li>
-            <li><strong>App Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Delivers optional app notifications on Android 13+.</li>
             <li><strong>Notification Access (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>):</strong> Discovers active media sessions for local music playback controls.</li>
-            <li><strong>Do Not Disturb Access (<code>ACCESS_NOTIFICATION_POLICY</code>):</strong> Toggles Do Not Disturb mode and Wallora's Zen rule from the control panel.</li>
+            <li><strong>Do Not Disturb Access (<code>ACCESS_NOTIFICATION_POLICY</code>):</strong> Turns Do Not Disturb on or off from the control panel. Wallora does not read or change your notification content.</li>
         </ul>
 
         <h2>5. Local App Discovery for Shortcuts</h2>
